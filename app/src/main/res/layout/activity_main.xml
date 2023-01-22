@@ -18,7 +18,7 @@
             android:layout_width="55dp"
             android:layout_height="55dp"
             app:srcCompat="@drawable/logo"
-            android:contentDescription="TODO" />
+            android:contentDescription="logo" />
 
         <TextView
             android:id="@+id/textView1"
@@ -36,74 +36,88 @@
         android:layout_width="match_parent"
         android:layout_height="45dp" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_gravity="center"
-        android:padding="10dp"
-        app:srcCompat="@drawable/work"
-        android:contentDescription="TODO" />
-
-    <Space
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="35dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="25dp">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="#0E0638"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:letterSpacing="0.18"
-        android:text="HELLO !" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:contentDescription="TODO"
+            android:padding="10dp"
+            app:srcCompat="@drawable/work" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#0E0638"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.18"
+            android:text="HELLO !" />
 
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="15dp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="#909090"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:paddingHorizontal="20dp"
-        android:letterSpacing="0.075"
-        android:text="Best place to write life stories and share your journey experiences" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#909090"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.075"
+            android:text="Best place to write life stories and share your journey experiences" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="30dp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@drawable/blue_gradient"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        android:letterSpacing="0.12"
-        android:text="Login" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="12dp" />
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_blue"
+                android:letterSpacing="0.12"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnSignup"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@drawable/blue_outline"
-        android:textColor="#000098"
-        android:textStyle="bold"
-        android:letterSpacing="0.12"
-        android:text="Signup" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
 
+            <Button
+                android:id="@+id/btnSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_outline"
+                android:textColor="@drawable/text_outline"
+                android:textStyle="bold"
+                android:letterSpacing="0.12"
+                android:text="Signup" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
